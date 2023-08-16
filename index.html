@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- Navbar start -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+        <h1 style="border: none;">selamat datang di kaltik</h1>
+        <h3>halo teman teman selamat datang di kaltik </h3>
+        <p>disini kalian dapat menggunakan kalkulator untuk menghitung luas dan keliling segitiga.. enjoy guys :3</p>
+
+    </div>
+    <div class="navbar-nav">
+        <a style="text-decoration:none" href="#luas">luas <br /></a>
+        <a style="text-decoration:none" href="#keliling">keliling</a>
+    </div>
+</nav>
+    <!-- Navbar end -->
+
+    <!-- Luas Section start-->
+    <section id="#luas" class="luas">
+        <h2>Luas Segitiga</h2>
+        <div class="luas-img">
+        <img src="image/luas.jpg">
+        </div>
+        <div>
+            <label for="base">Panjang Alas (cm): </label>
+            <input type="number" id="base">
+            <br>
+            <label for="height">Tinggi (cm): </label>
+            <input type="number" id="height">
+            <br>
+            <button onclick="calculate()">Hitung</button>
+            <br><br>
+            <p>Luas Segitiga (cm2): <span id="resultArea"></span></p>
+        </div>
+        <script>calculate()</script>
+    </section>
+    <!-- Luas Section end -->
+ 
+    <!-- Keliling Section start -->
+    <section id="keliling" class="keliling">
+        <h2>Keliling Segitiga</h2>
+        <div class="luas-img">
+            <img src="image/keliling.jpg">
+            </div>
+        <div>
+        <label for="sideA">Panjang Sisi A (cm): </label>
+        <input type="number" id="sideA">
+        <br>
+        <label for="sideB">Panjang Sisi B (cm): </label>
+        <input type="number" id="sideB">
+        <br>
+        <label for="sideC">Panjang Sisi C (cm): </label>
+        <input type="number" id="sideC">
+        <br>
+        <button onclick="calculatea()">Hitung Keliling</button>
+        <br><br>
+        <p>Keliling Segitiga (cm2): <span id="resultPerimeter2"></span></p>
+        </div>
+        <script>calculatea()</script>
+    </section>
+    <!-- Keliling Section end -->
+
+</body>
+</html>
